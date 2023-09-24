@@ -1,0 +1,30 @@
+.search-filter {
+
+    border-bottom: 3px solid white;
+    padding-bottom: 30px;
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+    gap: 2rem;
+
+    &__alfabetica {
+        display: flex;
+        justify-content: center;
+        gap:1rem;
+
+        button {
+            width: 100%;
+            height: 35px;
+            font-size: 20px;
+        }
+    }
+
+    input, select{
+        width: 300px;
+        height: 35px;      
+    }
+
+    input::placeholder {
+        color: rgb(196, 187, 187);
+    }
+}

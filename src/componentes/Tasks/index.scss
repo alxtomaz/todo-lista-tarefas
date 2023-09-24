@@ -1,0 +1,45 @@
+@use '../../sass/variables' as *;
+
+.TodoForms {
+    max-width: 97%;
+    margin: 0 auto;
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.organization__tasks {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid rgb(75, 71, 71);
+    border-radius: 5px;
+    padding: 6px;
+    margin-bottom: 1px;
+}
+
+.item {
+    width: 200px;
+}
+.item__description {
+    width: 430px;
+}
+
+.item__category {
+    width: 120px;
+}
+
+
+.item__completed-ok {
+    background-color: green;
+}
+
+.item__completed-no {
+    background-color: red;
+}
+
+.item__button {
+    display: flex;
+    gap: 8px;
+}

@@ -1,0 +1,9 @@
+@use '../../sass/variables' as *;
+
+.bodytitle {
+    background-color: $black;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

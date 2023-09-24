@@ -1,0 +1,12 @@
+@use '../../sass/variables' as *;
+
+body {
+    background-color: $black;
+}
+
+p {
+    color: $white;
+    font-weight: 1000;
+    font-size: 18px;
+}
+

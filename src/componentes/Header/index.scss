@@ -1,0 +1,32 @@
+@use '../../sass/variables' as *;
+
+.header {
+    background-color: $background-blue;
+    display: flex;
+    align-items: center;
+}
+.header__menu {
+    display: flex;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-left: 10px;
+
+    h2 {
+        color: $white;
+    }
+
+    &-organization {
+        padding: 5px 15px 5px 15px;
+    }
+
+    &-tarefas {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: $white;
+        padding: 5px 25px 5px 25px;
+        
+        h2 {
+            color:$background-blue
+        }
+    }
+}
