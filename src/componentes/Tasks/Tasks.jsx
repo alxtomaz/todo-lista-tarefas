@@ -2,9 +2,9 @@ import {useState} from 'react'
 import './index.scss'
 import TodoForms from '../TodoForms/TodoForms'
 import Search from '../Search/Search';
-// import { BsTrash } from 'react-icons/Bs';
-// import { FaEdit } from 'react-icons/Fa';
-// import { AiFillLike, AiFillDislike } from 'react-icons/Ai';
+import { BsTrash } from 'react-icons/Bs';
+import { FaEdit } from 'react-icons/Fa';
+import { AiFillLike, AiFillDislike } from 'react-icons/Ai';
 
 const Tasks = () => {
 
@@ -139,7 +139,7 @@ const Tasks = () => {
                     <button 
                     className='item__completed-ok'
                     onClick={()=> iscompleted(tasktantofaz.id)} 
-                    value={tasktantofaz.completed}>Realizada
+                    value={tasktantofaz.completed}><AiFillLike/>
                     </button>
                   </div>
                   <div>
@@ -148,11 +148,11 @@ const Tasks = () => {
                     onClick={()=> unrealized(tasktantofaz.id)}
                     value={tasktantofaz.unrealized}
                     key={tasktantofaz.id}        
-                    >Não realizada
+                    ><AiFillDislike/>
                     </button>
                   </div>            
-                  <p>edit</p>
-                  <p onClick={()=> removeTodos(tasktantofaz.id)}>trash</p>            
+                  <p><FaEdit/></p>
+                  <p onClick={()=> removeTodos(tasktantofaz.id)}><BsTrash/></p>            
                 </div>
               </div>
           </div>          
