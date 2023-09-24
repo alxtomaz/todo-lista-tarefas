@@ -2,7 +2,7 @@ import {useState} from 'react'
 import './index.scss'
 import TodoForms from '../TodoForms/TodoForms'
 import Search from '../Search/Search';
-import { BsTrash } from 'react-icons/Bs';
+// import { BsTrash } from 'react-icons/Bs';
 import { FaEdit } from 'react-icons/Fa';
 import { AiFillLike, AiFillDislike } from 'react-icons/Ai';
 
@@ -152,7 +152,7 @@ const Tasks = () => {
                     </button>
                   </div>            
                   <p><FaEdit/></p>
-                  <p onClick={()=> removeTodos(tasktantofaz.id)}><BsTrash/></p>            
+                  <p onClick={()=> removeTodos(tasktantofaz.id)}>Lixo</p>            
                 </div>
               </div>
           </div>          
