@@ -132,7 +132,8 @@ const Tasks = ({todos1, setTodos1}) => {
                     <button 
                     className='item__completed-ok'
                     onClick={()=> iscompleted(tasktantofaz.id)} 
-                    value={tasktantofaz.completed}><AiFillLike/>
+                    value={tasktantofaz.completed}
+                    ><img src='feito.png'/>
                     </button>
                   </div>
                   <div>
@@ -141,11 +142,11 @@ const Tasks = ({todos1, setTodos1}) => {
                     onClick={()=> unrealized(tasktantofaz.id)}
                     value={tasktantofaz.unrealized}
                     key={tasktantofaz.id}        
-                    ><AiFillDislike/>
+                    ><img src='nãorealizado.png'/>
                     </button>
                   </div>            
-                  <p onClick={()=> edit(tasktantofaz.id)}><Link to={`Edit/${tasktantofaz.id}` }><FaEdit/></Link></p>
-                  <p onClick={()=> removeTodos(tasktantofaz.id)}><BsTrash/></p>        
+                  <p><Link to={`Edit/${tasktantofaz.id}` }><img className='edit' src='editar.png'/></Link></p>
+                  <p onClick={()=> removeTodos(tasktantofaz.id)}><img className='excluir' src='excluir.png'/></p>        
                 </div>
               </div>
           </div>          
