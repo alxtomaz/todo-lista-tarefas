@@ -1,0 +1,32 @@
+@use '../../sass/variables' as *;
+
+.Todo {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid white;
+    padding-bottom: 30px;
+    
+    input::placeholder {
+        padding-left: 10px;
+        color: rgb(196, 187, 187);
+    }
+    
+    select::placeholder {
+        color: rgb(196, 187, 187);
+    }
+
+    input, select {
+        width: 50%;
+        border: 1px solid rgb(90, 87, 87);
+        border-radius: 5px;
+        font-size: 20px;
+        height: 30px;
+        padding-left: 5px;       
+    }
+
+    &__Forms {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

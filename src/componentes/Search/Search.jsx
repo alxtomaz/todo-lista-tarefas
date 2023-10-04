@@ -14,9 +14,8 @@ const Search = ({search, setSearch, filter, setFilter, setSort, filterunrealized
         <div className=''>
             <h2>Status</h2>
             <select value={filter} onChange={(e)=> setFilter(e.target.value)}>
-                <option value='all'>Todos</option>
-                <option value='true'>Completados</option>
                 <option value='false'>Incompletas</option>
+                <option value='true'>Completados</option>
             </select>
         </div>
         <div className=''>

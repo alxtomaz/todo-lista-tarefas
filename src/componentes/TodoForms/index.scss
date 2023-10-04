@@ -12,18 +12,5 @@
             height: 30px;
         }
 
-        input, select {
-            width: 50%;
-            border: 1px solid rgb(90, 87, 87);
-            border-radius: 5px;
-            font-size: 20px;
-            height: 30px;        
-        }
-
-        &-cadastro {
-            display: flex;
-            gap: 5px;
-        }
-
     }
 }

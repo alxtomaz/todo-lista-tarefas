@@ -11,13 +11,13 @@ const TodoForms = ({addTodo}) => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    if(!task || !obs || !category) {
-      return window.alert("Prencher todos os campos")
-    }
+    // if(!task || !obs || !category) {
+    //   return window.alert("Prencher todos os campos")
+    // }
 
     addTodo(task, obs, category, date)
 
-    //limpar campos após o cadastro
+    // limpar campos após o cadastro
     setTask('');
     setObs('');
     setCategory('');
@@ -31,20 +31,20 @@ const TodoForms = ({addTodo}) => {
         <h1>Criar Tarefas</h1>
         <form onSubmit={handleSubmit} className='Todo__Forms'>
           <div className='Todo__Forms-cadastro'>
-            <input value={task} type='text' placeholder='Digite a tarefa' onChange={(ttf)=> setTask(ttf.target.value)}></input>
+            <input id='task' value={task} type='text' placeholder='Digite a tarefa' onInput={(ttf)=> setTask(ttf.target.value)}></input>
             
-            <input value={date} onChange={(trf)=> setDate(trf.target.value)} type='date'/>
+            <input id='date' value={date} onInput={(trf)=> setDate(trf.target.value)} type='date'></input>
           </div>
           <div className='Todo__Forms-cadastro'>
-            <select value={category} onChange={(trf)=> setCategory(trf.target.value)} className=''>
+            <select  id='category' value={category} onInput={(trf)=> setCategory(trf.target.value)} className=''>
                     <option value=''>Selecione uma categoria</option>
                     <option value='Trabalho'>Trabalho</option>
                     <option value='Pessoal'>Pessoal</option>
                     <option value='Estudos'>Estudos</option>
             </select>
-            <input value={obs} type='text' placeholder='Digite uma obs' onChange={(trf)=> setObs(trf.target.value)}></input>
+            <input  id='obs' value={obs} type='text' placeholder='Digite uma obs' onInput={(trf)=> setObs(trf.target.value)}></input>
           </div>          
-            <button type='submit'>CRIAR TAREFA</button>
+            <button id='btnTarefas' type='submit'>CRIAR TAREFA</button>
         </form>      
     </div>
   )
